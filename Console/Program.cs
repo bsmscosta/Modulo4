@@ -24,7 +24,10 @@ namespace Consola
             Ficha6solucao.Exercicio23();
             Ficha6solucao.Exercicio31();
             Ficha6solucao.Exercicio32();
+            if (true)
+            {
 
+            }
             /* Exemplo de cancatenação
             Console.WriteLine("Introduza o valor");
             var val = Console.ReadLine();
