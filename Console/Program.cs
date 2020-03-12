@@ -8,6 +8,7 @@ namespace Consola
     {
         static void Main(string[] args)
         {
+            #region Ficha 6 (10)
             //Ficha6solucao.Exercicio1();
             //Ficha6solucao.Exercicio2();
             //Ficha6solucao.Exercicio3();
@@ -28,8 +29,10 @@ namespace Consola
             //Ficha6solucao.Exercicio31();
             //Ficha6solucao.Exercicio32();
 
-            /* Exemplo de cancatenação
-            Console.WriteLine("Introduza o valor");
+            #endregion
+
+            #region Exemplo de cancatenação
+            /* Console.WriteLine("Introduza o valor");
             var val = Console.ReadLine();
             Console.WriteLine("Introduza o carater");
             var cha = Console.Read();
@@ -40,6 +43,9 @@ namespace Consola
             Console.WriteLine($"\nValor {val} \nCarater {cha} \nTecla {tec.Key}");
             Console.WriteLine(@"\nValor {0} \ncarater {1} \nTecla {2}", val, cha, tec.Key);
             */
+            #endregion
+
+            #region Ficha7 (11)
 
             //Ficha7Solucao.Exercicio1();
             //Ficha7Solucao.Exercicio2();
@@ -49,10 +55,18 @@ namespace Consola
             //Ficha7Solucao.Exercicio6();
             //Ficha7Solucao.Exercicio7();
             //Ficha7Solucao.Exercicio8();
+            //Ficha7Solucao.Exercicio9();
+            //Ficha7Solucao.Exercicio10();
+            //Ficha7Solucao.Exercicio11();
+            //Ficha7Solucao.Exercicio12();
+            //Ficha7Solucao.Exercicio13();
+            //Ficha7Solucao.Exercicio21();
+            //Ficha7Solucao.Exercicio22();
+            //Ficha7Solucao.Exercicio23();
+            //Ficha7Solucao.Exercicio31();
+            //Ficha7Solucao.Exercicio32();
 
-
-
-
+            #endregion
         }
     }
 }

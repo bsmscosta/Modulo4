@@ -101,6 +101,7 @@ namespace Ficha7
 
         }
 
+
         #endregion
 
         #region Exercicio 5
@@ -176,7 +177,7 @@ namespace Ficha7
                 Console.WriteLine("Solicite o quantidade");
                 double quantidade = double.Parse(Console.ReadLine());
 
-                lista = lista + "O produto " + nome + " custa " + preco * quantidade + " €" + "\n";
+                lista = lista + "O produto " + nome + " custa " + (preco * quantidade) + " €" + "\n";
                 totalcompras += preco * quantidade;
 
             }
@@ -190,21 +191,263 @@ namespace Ficha7
 
         public static void Exercicio9()
         {
-            Console.WriteLine("Digites números");
-            var num = int.Parse(Console.ReadLine());
+            int i = 0;
+            double soma = 0;
+            double num;
 
-            /* int contar = 0;
-            do // fazer
+            do
             {
-                Console.WriteLine(contar);
-                contar++;
-            }
-            while (counter )
+                Console.WriteLine("Digites números");
+                num = double.Parse(Console.ReadLine());
 
-            }
-        } */
 
-            #endregion
+                if (num != 0)
+                {
+                    soma = soma + num;
+                    i++;
+                }
+            } while (num != 0);
+
+            Console.WriteLine("A média da soma é igual" + soma / i);
         }
+
+        #endregion
+
+        #region Exercicio 10
+
+        public static void Exercicio10()
+        {
+            Console.WriteLine(" 1º N?");
+            var n1 = double.Parse(Console.ReadLine());
+            Console.WriteLine(" 2º N?");
+            var n2 = double.Parse(Console.ReadLine());
+            Console.WriteLine(" Qual é a operação");
+            var op = Console.ReadLine();
+            double resultado = 0;
+
+            if (op == "+")
+            {
+                resultado = n1 + n2;
+                Console.WriteLine("N1 + N2 = " + resultado);
+            }
+            else if (op == "-")
+            {
+                resultado = n1 - n2;
+                Console.WriteLine("N1 - N2 = " + resultado);
+            }
+            else if (op == "*")
+            {
+                resultado = n1 * n2;
+                Console.WriteLine("N1 * N2 = " + resultado);
+            }
+            else if (op == "/")
+            {
+                resultado = n1 / n2;
+                Console.WriteLine("N1 / N2 = " + resultado);
+            }
+            else if (op == "%")
+            {
+                resultado = n1 % n2;
+                Console.WriteLine("N1 % N2 = " + resultado);
+            }
+            else
+            {
+                Console.WriteLine("operador invalido");
+            }
+
+        }
+
+        #endregion
+
+        #region Exercicio11
+
+        public static void Exercicio11()
+        {
+            Console.WriteLine("Escreva um carater");
+            var c = Console.ReadLine();
+
+            for (int counter = 1; counter <= 3; counter++)
+            {
+                for (int counter2 = 1; counter2 <= 3; counter2++)
+                {
+                    Console.Write(c + " ");
+                }
+                Console.Write("\n");
+            }
+
+        }
+        #endregion
+
+        #region Exercicio 12
+
+        public static void Exercicio12()
+        {
+            Console.WriteLine("Escreva um carater");
+            var c = Console.ReadLine();
+            Console.WriteLine("Escreva um número");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int counter = 1; counter <= n; counter++)
+            {
+                for (int counter2 = 1; counter2 <= n; counter2++)
+                {
+                    Console.Write(c + " ");
+                }
+                Console.Write("\n");
+            }
+
+        }
+
+        #endregion
+
+        #region Exercicio 13
+
+        public static void Exercicio13()
+        {
+            Console.WriteLine("Escreva o primeiro carater");
+            var m = Console.ReadLine();
+            Console.WriteLine("Escreva o segundo carater");
+            var n = Console.ReadLine();
+
+            Console.WriteLine("Digite o primeiro número");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número");
+            int num2 = int.Parse(Console.ReadLine());
+
+            for (int counter = 1; counter <= num1; counter++)
+            {
+                for (int counter2 = 1; counter2 <= num2; counter2++)
+                {
+                    if (counter2 % 2 == 0)
+                    {
+                        Console.Write(m + " ");
+                    }
+                    else
+                    {
+                        Console.Write(n + " ");
+                    }
+                }
+                Console.Write("\n");
+            }
+        }
+        #endregion
+
+        #region Exercicio 21
+        public static void Exercicio21()
+        {
+            Console.WriteLine("Introduz a temperatura");
+            double temp = double.Parse(Console.ReadLine());
+            string escala = "";
+
+            while (escala != "C" && escala != "K" && escala != "F")
+            {
+                Console.WriteLine("Em que escala? (C,K ou F)");
+                escala = Console.ReadLine();
+            }
+            switch (escala)
+            {
+                case "C":
+                    Console.WriteLine("ºC é equivalente a " + (temp + 273.15) + " ºK e " + ((temp * 9 / 5) + 32) + "F");
+                    break;
+                case "K":
+                    Console.WriteLine("ºK é equivalente a " + (temp - 273.15) + " ºC e " + ((temp * 9 / 5) - 459, 67) + "F");
+                    break;
+                case "F":
+                    Console.WriteLine("ºF é equivalente a " + ((temp - 32) * 5 / 9) + " ºC e " + (temp + 459, 67) + "K");
+                    break;
+                default:
+                    Console.WriteLine("Escala de temperatura desconhecida");
+                    break;
+            }
+        }
+
+        #endregion
+
+        #region Exercicio 22
+        public static void Exercicio22() // Apresenta uma lista de nº impares
+        {
+            Console.WriteLine("Qual é o número limite?");
+            int num = int.Parse(Console.ReadLine());
+
+            for (int count = 0; count <= num; count++)
+            {
+                if (count % 2 == 1)
+                {
+                    Console.WriteLine(count);
+                }
+            }
+        }
+
+        
+
+        #endregion
+
+        #region Exercicio 23
+        public static void Exercicio23()
+        {
+            string caracteres = "";
+            string caracter = "";
+
+            do
+            {
+                Console.WriteLine("Introduz um número, ou enter para terminar");
+                caracter = Console.ReadLine();
+                caracteres = caracter + caracteres; // Apresenta o resultado ao contrário porque A = B + A --> BA
+            } while (caracter != "");
+            Console.WriteLine(caracteres);
+        }
+
+        #endregion
+
+        #region Exercicio 31
+        public static void Exercicio31()
+        {
+            Console.WriteLine("Introduz um número?");
+            double n = double.Parse(Console.ReadLine());
+            if ( n % 2 == 0)
+            {
+                Console.WriteLine(n * 3);
+            }
+            else
+            {
+                Console.WriteLine(n * 2);
+            }
+        }
+
+        #endregion
+
+        #region Exercicio 32
+        public static void Exercicio32()
+        {
+            Console.WriteLine("Qual é a dimensão do triângulo?");
+            int n = int.Parse(Console.ReadLine());
+            int i = 1;
+      
+
+            while (n > 0)
+            {
+                n--;
+                int a = 0;
+
+                while (a != n)
+                {
+                    Console.Write(" ");
+                    a++;
+                }
+                int b = 0;
+
+                while (b != i)
+                {
+                    Console.Write("*");
+                    b++; 
+                } 
+                i += 2;
+                Console.Write("\n");
+            }
+
+        }
+
+        #endregion
     }
 }
+
