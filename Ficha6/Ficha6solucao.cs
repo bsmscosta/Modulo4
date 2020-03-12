@@ -75,7 +75,7 @@ namespace Ficha6
 
         #endregion
 
-        #region Exercicio4
+        #region Exercicio 4
 
         public static void Exercicio4()
         {
@@ -91,9 +91,56 @@ namespace Ficha6
 
         #endregion
 
-        #region Exercicio5
-        public void Exercicio5a()
+        #region Exercicio5a
+        public static void Exercicio5a()
         {
+            Console.WriteLine("Número 1?");
+            var num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 2?");
+            var num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 3?");
+            var num3 = double.Parse(Console.ReadLine());
+
+            double o = num1 + (num2 * num3);
+            Console.WriteLine("Nº1 + Nº2 * Nº3 = " + o);
+
+        }
+        #endregion
+
+        #region Exercicio5b
+        public static void Exercicio5b()
+        {
+            Console.WriteLine("Número 1?");
+            var num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 2?");
+            var num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 3?");
+            var num3 = double.Parse(Console.ReadLine());
+
+            double o = (num1 + num2) % num3;
+            Console.WriteLine("(Nº1 + Nº2) % Nº3 = " + o);
+
+        }
+        #endregion
+
+        #region Exercicio5b
+        public static void Exercicio5d()
+        {
+            Console.WriteLine("Número 1?");
+            var num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 2?");
+            var num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 3?");
+            var num3 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 4?");
+            var num4 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 5?");
+            var num5 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Número 6?");
+            var num6 = double.Parse(Console.ReadLine());
+
+            double o = num1 + (num2 / num3 * num4) - (num5 % num6);
+            Console.WriteLine("Nº1 + (Nº2 / Nº3 * Nº4) - (Nº5 % N6) = " + o);
 
         }
         #endregion
@@ -129,7 +176,7 @@ namespace Ficha6
             Console.WriteLine((t + " * 10 = " + j));
         }
 
-        
+
 
 
         #endregion
@@ -143,7 +190,7 @@ namespace Ficha6
             double num2 = double.Parse(Console.ReadLine());
             Calmedia(num1, num2);
         }
-        public static void Calmedia(double num1,double num2)
+        public static void Calmedia(double num1, double num2)
         {
             double r = (num1 + num2) / 2;
             Console.WriteLine("O resultado é " + r);
@@ -172,25 +219,25 @@ namespace Ficha6
 
         #region Exercicio 9
         public static void Exercicio9()
-        { 
-        double num1 = LerEConverter();
-        double num2 = LerEConverter();
-        double num3 = LerEConverter();
-        double num4 = LerEConverter();
-        double num5 = LerEConverter();
-        double num6 = LerEConverter();
-        double num7 = LerEConverter();
-        double num8 = LerEConverter();
-        double num9 = LerEConverter();
-        double num10 = LerEConverter();
+        {
+            double num1 = LerEConverter();
+            double num2 = LerEConverter();
+            double num3 = LerEConverter();
+            double num4 = LerEConverter();
+            double num5 = LerEConverter();
+            double num6 = LerEConverter();
+            double num7 = LerEConverter();
+            double num8 = LerEConverter();
+            double num9 = LerEConverter();
+            double num10 = LerEConverter();
 
-        Media(num1, num2, num3, num4, num5, num6, num7, num8, num9, num10);
-    }
-    public static void Media(double n1, double n2, double n3, double n4, double n5, double n6, double n7, double n8, double n9, double n10)
-    {
-        double m = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10) / 10;
-        Console.WriteLine("A média da soma dos 10 números é:" + m);
-    }
+            Media(num1, num2, num3, num4, num5, num6, num7, num8, num9, num10);
+        }
+        public static void Media(double n1, double n2, double n3, double n4, double n5, double n6, double n7, double n8, double n9, double n10)
+        {
+            double m = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10) / 10;
+            Console.WriteLine("A média da soma dos 10 números é:" + m);
+        }
 
         #endregion
 
@@ -215,7 +262,7 @@ namespace Ficha6
             Console.WriteLine("Qual o preço do produto?");
             double preco = double.Parse(Console.ReadLine());
             Console.WriteLine("Qual a quantidade do produto?");
-            double quantidade  = double.Parse(Console.ReadLine());
+            double quantidade = double.Parse(Console.ReadLine());
 
             double listacompras = (preco * quantidade);
             Console.WriteLine("O total da lista é " + listacompras + " euros");
@@ -259,8 +306,45 @@ namespace Ficha6
 
         public static void Exercicio23()
         {
+            Console.WriteLine("Introduzir temperatura");
+            double temp = double.Parse(Console.ReadLine());
+            double tempf = temp * (9 / 5) + 32;
+            double tempk = temp + 273.15;
+            Console.WriteLine("A temperatura " + temp + " ºC" + " é " + tempf + " ºF" + " e " + tempk + " ºK");
+        }
+
+        #endregion
+
+        #region Exercicio 31
+
+        public static void Exercicio31()
+        {
+            Console.WriteLine("Quantas horas?");
+            int hora = int.Parse(Console.ReadLine());
+            Console.WriteLine("Quantas minutos?");
+            int minutos = int.Parse(Console.ReadLine());
+            Console.WriteLine("Quantas segundos?");
+            int segundos = int.Parse(Console.ReadLine());
+
+            int Total = hora * 3600 + minutos * 60 + segundos;
+            Console.WriteLine("São " + hora + ":" + minutos + ":" + segundos);
 
         }
+
+        #endregion
+
+        #region Exercicio 32
+        public static void Exercicio32()
+        {
+            Console.WriteLine("Qúal é o raio?");
+            double raio = double.Parse(Console.ReadLine());
+
+            double perimetro = raio * 3.14;
+            double area = (raio * raio) * 3.14;
+
+            Console.WriteLine("A área do circulo é " + area + " e o perímetro é " + perimetro);
+        }
+
         #endregion
     }
 }

@@ -12,7 +12,10 @@ namespace Consola
             //Ficha6solucao.Exercicio2();
             //Ficha6solucao.Exercicio3();
             //Ficha6solucao.Exercicio4();
-            //Ficha6solucao.Exercicio5();
+            //Ficha6solucao.Exercicio5a();
+            //Ficha6solucao.Exercicio5b();
+            //Ficha6solucao.Exercicio5c();
+            //Ficha6solucao.Exercicio5d();
             //Ficha6solucao.Exercicio6();
             //Ficha6solucao.Exercicio7();
             //Ficha6solucao.Exercicio8();
@@ -21,10 +24,10 @@ namespace Consola
             //Ficha6solucao.Exercicio11();
             //Ficha6solucao.Exercicio21();
             //Ficha6solucao.Exercicio22();
-            Ficha6solucao.Exercicio23();
-            Ficha6solucao.Exercicio31();
-            Ficha6solucao.Exercicio32();
-            
+            //Ficha6solucao.Exercicio23();
+            //Ficha6solucao.Exercicio31();
+            //Ficha6solucao.Exercicio32();
+
             /* Exemplo de cancatenação
             Console.WriteLine("Introduza o valor");
             var val = Console.ReadLine();
@@ -37,8 +40,6 @@ namespace Consola
             Console.WriteLine($"\nValor {val} \nCarater {cha} \nTecla {tec.Key}");
             Console.WriteLine(@"\nValor {0} \ncarater {1} \nTecla {2}", val, cha, tec.Key);
             */
-
-
 
             //Ficha7Solucao.Exercicio1();
             //Ficha7Solucao.Exercicio2();
