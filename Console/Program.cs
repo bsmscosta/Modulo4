@@ -1,5 +1,8 @@
-﻿using Ficha6;
+﻿
+using Ficha6;
 using Ficha7;
+using ficha9;
+using Ficha14;
 using System;
 
 namespace Consola
@@ -67,6 +70,41 @@ namespace Consola
             //Ficha7Solucao.Exercicio32();
 
             #endregion
+
+            #region Ficha 9 (12)
+
+            //ficha9solucao.Exercicio1();
+            //ficha9solucao.Exercicio2();
+            //ficha9solucao.Exercicio3();
+            //ficha9solucao.Exercicio4();
+            //ficha9solucao.Exercicio5();
+            //ficha9solucao.Exercicio6();
+            //ficha9solucao.Exercicio7();
+            //ficha9solucao.Exercicio8();
+            //ficha9solucao.Exercicio9();
+            //ficha9solucao.Exercicio10();
+            //ficha9solucao.Exercicio11();
+            //ficha9solucao.Exercicio12();
+            //ficha9solucao.Exercicio13();
+            //ficha9solucao.Exercicio14();
+            //ficha9solucao.Exercicio15();
+            //ficha9solucao.Exercicio16();
+
+            #endregion
+
+            #region ficha 14
+
+            //ficha14solucao.Exercicio1();
+            //ficha14solucao.Exercicio2();
+            //ficha14solucao.Exercicio3();
+            //ficha14solucao.Exercicio4();
+            ficha14solucao.Exercicio5();
+            //ficha14solucao.Exercicio6();
+
+            #endregion
+
         }
+
     }
+
 }
